@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;500;600;700;800&display=swap');
+:root{font-family:"Noto Sans Tamil",system-ui,sans-serif;color:#17291f;background:#e8ece8}
+*{box-sizing:border-box}body{margin:0}button,input,select{font:inherit}button{touch-action:manipulation}
+.app{min-height:100vh;display:grid;grid-template-columns:minmax(320px,420px) minmax(0,1fr);gap:24px;padding:24px;align-items:start}
+.editor{background:white;border-radius:18px;padding:20px;box-shadow:0 8px 30px #0001;height:max-content;position:sticky;top:20px;z-index:3}
+.editor-head{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:14px;gap:10px}h1{font-size:22px;margin:0 0 3px}.editor p{margin:0;color:#718078;font-size:12px}
+.ghost,.primary,.upload{border:0;border-radius:10px;padding:10px 13px;display:inline-flex;gap:7px;align-items:center;justify-content:center;cursor:pointer;min-height:42px}.ghost{background:#eef3ef;color:#244635}.primary{background:#17633f;color:#fff}.primary:disabled{opacity:.65;cursor:wait}.upload{background:#f3f5f3;color:#234331;cursor:pointer}.upload input{display:none}
+details{border:1px solid #e0e6e1;border-radius:12px;margin:10px 0;overflow:hidden;background:#fbfcfb}summary{cursor:pointer;list-style:none;padding:12px 13px;font-weight:800;color:#234a36}summary::-webkit-details-marker{display:none}summary:after{content:'+';float:right;font-size:18px}details[open] summary:after{content:'−'}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:11px;padding:0 12px 13px}label{font-size:11px;font-weight:700;color:#4a5b51;display:grid;gap:5px}label.wide{grid-column:1/-1}input,select{width:100%;border:1px solid #d3ddd6;border-radius:9px;padding:10px;background:#fff;outline:none;min-height:42px}input:focus,select:focus{border-color:#32865c;box-shadow:0 0 0 2px #32865c18}.area-pill{grid-column:1/-1;background:#eaf5ee;border-radius:9px;padding:10px 12px;font-size:11px;color:#476154;display:flex;justify-content:space-between}.area-pill b{color:#12603b;font-size:13px}
+.actions{display:flex;justify-content:space-between;gap:10px;margin-top:14px}.preview-wrap{min-width:0;min-width:0}.preview-head{max-width:1080px;margin:0 auto 10px;color:#52665a;font-size:13px;display:flex;gap:7px;align-items:center}.preview-head span{margin-left:auto}.poster-frame{width:100%;overflow:hidden;padding:0 2px 12px;display:flex;justify-content:center}.poster{width:1080px;flex:0 0 1080px;margin:auto;background:#f8f5e9;overflow:hidden;color:#172016;box-shadow:0 12px 40px #0002}
+.hero{background:linear-gradient(145deg,#063b24,#0d2c1c);color:#fff;padding:30px 38px 22px;position:relative;text-align:center;border-bottom:5px solid #d5a915}.brand{font-size:34px;font-weight:800;letter-spacing:.5px;margin-bottom:5px;display:flex;align-items:center;justify-content:center;gap:10px}.brand-logo{width:52px;height:52px;display:inline-flex;align-items:center;justify-content:center;overflow:hidden;flex:0 0 52px}.brand-logo img{display:block;width:52px !important;height:52px !important;max-width:52px !important;max-height:52px !important;object-fit:contain !important;vertical-align:middle}.brand-logo>span{color:#e4bd24}.brand>span:last-child{display:inline-block}.hero h2{font-size:52px;color:#ffdf16;text-shadow:2px 3px #6b4f00;margin:7px 115px 19px;line-height:1.2}.approval{position:absolute;right:32px;top:25px;width:124px;height:124px;border-radius:50%;background:linear-gradient(#ffe88b,#d7a80e);color:#172016;display:grid;place-content:center;font-weight:900;font-size:15px;line-height:1.05;border:5px solid #f6d55b;box-shadow:0 2px 0 #fff8 inset}.approval div:nth-child(2){background:#d71920;color:white;margin:3px -12px;padding:4px}.benefits{display:flex;justify-content:center;gap:28px;font-size:14px;font-weight:600}.benefits span{color:#f7e14a}
+.body{display:grid;grid-template-columns:38% 62%;padding:26px;gap:22px}.left-col{display:grid;gap:18px}.location-card,.details-card,.map-card{border:2px solid #16462f;border-radius:16px;overflow:hidden;background:#fffef9}.card-title{background:#0c472c;color:white;text-align:center;font-size:27px;font-weight:800;padding:12px}.location-text{text-align:center;padding:28px 16px;font-size:23px;font-weight:600;line-height:1.8}.details-card{padding-bottom:12px}.details-card .card-title{margin-bottom:9px}.detail{display:flex;justify-content:space-between;gap:10px;padding:11px 17px;font-size:16px;border-bottom:1px dashed #ccd4cd}.detail strong{color:#a51f1f;text-align:right}.map-card{padding:13px}.map-card h3{text-align:center;margin:0;font-size:25px}.site-map{display:block;width:100%;height:auto}
+.feature-row{display:grid;grid-template-columns:repeat(4,1fr);margin:0 26px 18px;border-top:1px solid #cfcfc3;border-bottom:1px solid #cfcfc3}.feature-row>div{min-height:92px;display:flex;justify-content:center;align-items:center;gap:12px;border-right:1px solid #ccc}.feature-row>div:last-child{border:0}.icon{font-size:38px}.feature-row b{font-size:14px;text-align:center}.for-sale{background:#0b482e;color:#ffe02c;font-size:22px;text-align:center;font-weight:800}.footer-banner{background:#b11116;color:#fff;text-align:center;font-size:24px;font-weight:800;padding:10px}footer{display:grid;grid-template-columns:1fr 1.4fr;background:#063b24;color:#fff;min-height:118px}.footer-brand,.phone{display:flex;align-items:center;gap:13px;padding:15px 28px}.footer-brand{background:#faf9ef;color:#17462e}.footer-logo{width:70px;height:70px;display:flex;align-items:center;justify-content:center;overflow:hidden;flex:0 0 70px}.footer-logo img{display:block;width:70px !important;height:70px !important;max-width:70px !important;max-height:70px !important;object-fit:contain !important}.footer-logo .house-logo{line-height:1}.house-logo{font-size:60px}.footer-brand b{font-size:31px}.footer-brand small,.phone small{display:block;font-size:12px}.phone{justify-content:center;color:#f6d72d}.phone strong{font-size:39px;color:#fff}.phone small{color:#f6d72d}
+.mobile-tabs,.mobile-export{display:none}
+@media(max-width:1100px){.app{grid-template-columns:380px minmax(0,1fr);gap:16px;padding:16px}}
+@media(max-width:800px){body{background:#f3f5f3}.app{display:block;padding:0 0 82px}.mobile-tabs{display:grid;grid-template-columns:1fr 1fr;position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid #dce4de;box-shadow:0 2px 10px #00000010}.mobile-tabs button{border:0;background:#fff;padding:13px 8px;font-weight:800;color:#587064}.mobile-tabs button.active{color:#0d5b38;border-bottom:3px solid #0d5b38}.editor{position:static;border-radius:0;box-shadow:none;padding:12px;background:#f3f5f3}.preview-wrap{padding:10px}.mobile-hidden{display:none}.poster-frame{overflow:hidden;padding:0;display:block;height:auto !important}.poster{width:100%;flex:0 0 auto;transform:none !important;box-shadow:0 6px 25px #0002}.hero{padding:22px 15px 17px}.brand{font-size:22px;gap:7px}.brand-logo{width:36px;height:36px;flex-basis:36px}.brand-logo img{width:36px !important;height:36px !important;max-width:36px !important;max-height:36px !important}.footer-logo{width:45px;height:45px;flex-basis:45px}.footer-logo img{width:45px !important;height:45px !important;max-width:45px !important;max-height:45px !important}.hero h2{font-size:34px;margin:8px 88px 15px 5px}.approval{right:12px;top:15px;width:82px;height:82px;font-size:10px;border-width:3px}.approval div:nth-child(2){margin:2px -8px;padding:2px}.benefits{gap:6px 12px;font-size:9px;flex-wrap:wrap}.body{grid-template-columns:1fr;padding:13px;gap:13px}.card-title{font-size:20px;padding:9px}.location-text{font-size:17px;padding:18px 10px}.detail{font-size:13px;padding:8px 11px}.map-card h3{font-size:19px}.feature-row{margin:0 13px 13px}.feature-row>div{min-height:62px;gap:4px}.icon{font-size:25px}.feature-row b{font-size:9px}.for-sale{font-size:14px}.footer-banner{font-size:15px}.footer-brand,.phone{padding:9px 12px}.footer-brand img{width:45px;height:45px}.house-logo{font-size:40px}.footer-brand b{font-size:18px}.footer-brand small,.phone small{font-size:7px}.phone strong{font-size:22px}.mobile-export{display:block;position:fixed;left:0;right:0;bottom:0;padding:10px;background:#fff;border-top:1px solid #d8e0da;box-shadow:0 -4px 18px #0002;z-index:30}.export-big{width:100%;font-size:16px;min-height:48px}.actions{flex-direction:column}.actions .upload,.actions .primary{width:100%}.form-grid{grid-template-columns:1fr;gap:10px}label.wide{grid-column:auto}.area-pill{grid-column:auto}}
+@media(min-width:801px){.poster-frame{overflow:hidden}.mobile-tabs{display:none}.poster{transform-origin:top center}}
+
+.logo-upload-wrap{display:grid;gap:5px}
+.upload-hint{font-size:10px;color:#728078;line-height:1.4}
+.phone{flex-direction:column;justify-content:center;align-items:center;gap:2px;text-align:center}
+.phone-number{display:flex;align-items:center;justify-content:center;gap:8px;white-space:nowrap;line-height:1}
+.phone small{display:block;margin-top:3px}
+
+@media(max-width:800px){
+  .upload-hint{font-size:10px}
+  footer{grid-template-columns:1fr 1fr}
+  .phone{padding:9px 6px;min-width:0}
+  .phone-number{gap:4px;white-space:nowrap}
+  .phone strong{font-size:21px;letter-spacing:-.3px}
+  .phone small{font-size:7px;line-height:1.25;max-width:130px}
+}
+
+.head-actions{display:flex;align-items:center;gap:8px}
+.head-export{min-height:40px}
+.actions .export-desktop{display:inline-flex}
+.secondary-big{border:0;border-radius:10px;background:#eef3ef;color:#244635;display:inline-flex;align-items:center;justify-content:center;gap:7px;font-weight:800;min-height:48px;padding:0 12px;cursor:pointer}
+@media(max-width:800px){
+  .editor-head{align-items:center}
+  .head-actions .head-export{display:none}
+  .head-actions .ghost{min-height:38px}
+  .actions{gap:8px}
+  .actions .export-desktop{display:flex;width:100%}
+  .mobile-export{display:grid;grid-template-columns:1fr 1.25fr;gap:8px}
+  .mobile-export button{width:100%}
+}
+@media(min-width:801px){
+  .mobile-export{display:none}
+}
+
+@media(max-width:1100px) and (min-width:801px){.preview-wrap{overflow:hidden}.poster-frame{max-width:100%;}.poster{box-shadow:0 8px 25px #0002}}
+
+/* V8 social-media export formats */
+.export-options{margin-top:14px;background:#f4f8f5;border:1px solid #dce7df;border-radius:12px;padding:12px;display:grid;gap:7px}
+.export-options label{font-size:11px}
+.export-options small{font-size:10px;color:#66766c;line-height:1.4}
+.poster.format-square{min-height:1080px}
+.poster.format-feed{min-height:1350px}
+.poster.format-story{min-height:1920px}
+.poster[data-exporting="true"]{min-height:0;height:auto}
+
+/* Keep the complete composition inside the square format without cropping. */
+.poster.format-square .hero{padding-top:20px;padding-bottom:14px}
+.poster.format-square .hero h2{font-size:46px;margin-bottom:13px}
+.poster.format-square .benefits{gap:16px;font-size:12px}
+.poster.format-square .body{padding:18px 22px;gap:16px}
+.poster.format-square .location-text{padding:18px 12px;font-size:20px}
+.poster.format-square .detail{padding:8px 13px;font-size:14px}
+.poster.format-square .card-title{font-size:23px;padding:9px}
+.poster.format-square .feature-row>div{min-height:78px}
+.poster.format-square .footer-banner{font-size:21px;padding:8px}
+.poster.format-square footer{min-height:104px}
+.poster.format-square .footer-brand b{font-size:27px}
+.poster.format-square .phone strong{font-size:35px}
+
+/* Story format gets more breathing room and is optimized for phone screens. */
+.poster.format-story .hero{padding:48px 55px 34px}
+.poster.format-story .brand{font-size:42px}
+.poster.format-story .brand-logo{width:64px;height:64px;flex-basis:64px}
+.poster.format-story .brand-logo img{width:64px !important;height:64px !important;max-width:64px !important;max-height:64px !important}
+.poster.format-story .hero h2{font-size:64px;margin-top:18px;margin-bottom:28px}
+.poster.format-story .approval{width:140px;height:140px;right:45px;top:35px;font-size:17px}
+.poster.format-story .benefits{font-size:16px;gap:22px}
+.poster.format-story .body{padding:38px 40px;gap:30px}
+.poster.format-story .card-title{font-size:30px;padding:15px}
+.poster.format-story .location-text{font-size:27px;padding:32px 18px}
+.poster.format-story .detail{font-size:19px;padding:13px 19px}
+.poster.format-story .map-card h3{font-size:29px}
+.poster.format-story .feature-row{margin:0 40px 24px}
+.poster.format-story .feature-row>div{min-height:112px}
+.poster.format-story .icon{font-size:45px}
+.poster.format-story .feature-row b{font-size:16px}
+.poster.format-story .for-sale{font-size:25px}
+.poster.format-story .footer-banner{font-size:29px;padding:13px}
+.poster.format-story footer{min-height:140px}
+.poster.format-story .footer-logo{width:82px;height:82px;flex-basis:82px}
+.poster.format-story .footer-logo img{width:82px !important;height:82px !important;max-width:82px !important;max-height:82px !important}
+.poster.format-story .footer-brand b{font-size:35px}
+.poster.format-story .phone strong{font-size:45px}
+
+@media(max-width:800px){
+  .export-options{margin-top:10px}
+  .poster.format-square,.poster.format-feed,.poster.format-story{min-height:0;height:auto}
+  .poster.format-story .hero{padding:22px 15px 17px}
+  .poster.format-story .brand{font-size:22px}
+  .poster.format-story .brand-logo{width:36px;height:36px;flex-basis:36px}
+  .poster.format-story .brand-logo img{width:36px !important;height:36px !important;max-width:36px !important;max-height:36px !important}
+  .poster.format-story .hero h2{font-size:34px;margin:8px 88px 15px 5px}
+  .poster.format-story .approval{right:12px;top:15px;width:82px;height:82px;font-size:10px}
+  .poster.format-story .benefits{gap:6px 12px;font-size:9px}
+  .poster.format-story .body{padding:13px;gap:13px}
+  .poster.format-story .card-title{font-size:20px;padding:9px}
+  .poster.format-story .location-text{font-size:17px;padding:18px 10px}
+  .poster.format-story .detail{font-size:13px;padding:8px 11px}
+  .poster.format-story .feature-row{margin:0 13px 13px}
+  .poster.format-story .feature-row>div{min-height:62px}
+  .poster.format-story .icon{font-size:25px}
+  .poster.format-story .feature-row b{font-size:9px}
+  .poster.format-story .for-sale{font-size:14px}
+  .poster.format-story .footer-banner{font-size:15px}
+  .poster.format-story footer{min-height:118px}
+  .poster.format-story .footer-logo{width:45px;height:45px;flex-basis:45px}
+  .poster.format-story .footer-logo img{width:45px !important;height:45px !important;max-width:45px !important;max-height:45px !important}
+  .poster.format-story .footer-brand b{font-size:18px}
+  .poster.format-story .phone strong{font-size:21px}
+}
